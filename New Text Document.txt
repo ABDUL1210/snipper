@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" id="bigdaddy">
+    <script>
+        const rainbow = ["violet", "indigo", "blue", "green", "yellow", "orange", "red"];
+        function nextColor(startColor) {
+                var currentIndex = rainbow.indexOf(startColor);
+                var nextIndex = currentIndex + 1;
+                if (nextIndex === 7)
+                    nextIndex = 0;
+                return rainbow[nextIndex];
+        }
+        function cycleBgColor(id) {
+                var elem = document.getElementById(id);
+                currentColor = elem.style.backgroundColor;
+                elem.style.backgroundColor = nextColor(currentColor);
+            }
+
+    function toggleRating(){
+        var elem = document.getElementById("greeting");
+        if (elem.textContent === "⭐⭐⭐⭐⭐")
+                elem.textContent = "";
+            else
+                elem.textContent = "⭐⭐⭐⭐⭐";
+        }
+        </script>
+    <link rel="stylesheet" href="styles.css" />
+    <body>
+        
+        <p id="greeting"></p>
+        
+        <h1><strong>                 dabangg                     </strong></h1>
+        <button onclick="toggleRating()">Toggle</button>
+        <figure> 
+        <img
+         src=https://resizing.flixster.com/UIPdNpDSgJ0Mjd8_qZrsat5JrXU=/206x305/v2/https://flxt.tmsimg.com/assets/p8269619_p_v8_ab.jpg
+        />     
+        <figcaption>apna movie</figcaption>
+        </figure>
+        <p> 
+            <h2><strong> movie review</strong></h2>
+            <span><li>
+                Dabangg is set in the Indian state of Uttar Pradesh, and tells the story of a fearless 
+                police officer, Chulbul Pandey, and his troubled relationship with his stepfather and half-brother
+            </li></span>
+            <li>
+                Dabangg is set in the Indian state of Uttar Pradesh, and tells the story of a fearless police officer, Chulbul Pandey, 
+                and his troubled relationship with his stepfather and half-brother
+            </li>
+            <li>
+                A street smart cop of a small town has his own way of dealing with crimes, 
+                corruption and politics
+            </li>
+            </p>
+        <p>
+        <h3><strong>cast and crew</strong></p></body></h3>    
+        <li><a href="https://en.wikipedia.org/wiki/Salman_Khan "> Salman Khan</a></html></li>
+        </p8>
+        <button id="rainbow" style="background-color:violet" onclick="cycleBgColor(id)">Rainbow!</button>          
+    </body>
+    </html>
